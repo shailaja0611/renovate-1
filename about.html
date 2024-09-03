@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Renovate</title>
+    <link rel="stylesheet" href="about.css">
+    
+
+
+</head>
+<body>
+    <nav>
+        <img src="https://cdn.prod.website-files.com/667cf3b0fa81a7f6097d07c6/669badf6828f2f4dff48dae7_renovate.svg" alt="">
+        <!-- Navigation Menu -->
+        <ul class="navbar-menu">
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Pages<ion-icon name="chevron-down-outline"></ion-icon></a>
+                <div class="dropdown-menu">
+                    <a href="#">Home</a>
+                    <a href="#">Home2</a>
+                    <a href="#">About</a>
+                    <a href="#">Work</a>
+                    <a href="#">Services</a>
+                    <a href="#">Service Static</a>
+                    <a href="#">Image Gallery</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Project Estimation Plan</a>
+                    <a href="#">Privacy And Policy</a>
+                </div>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Work</a></li>
+        </ul>
+        <button>Get an estimate</button>
+    </nav>
+</body>
+
+    <div class="a">
+        <h1>About Renovate</h1>
+    </div>
+    <div class="b1-b2">
+        <div class="b1">
+        <img src="aboutimg/about 1.jpg" alt="">
+    </div>
+    <div class="b2">
+        <p>Renovate was founded in 2017 by Louis Ferguson, who envisioned a<br>
+             company dedicated to quality craftsmanship and customer satisfaction.<br> 
+             What started as a small team has become a leading home renovation <br>
+             service, renowned for our meticulous attention to detail and commitment<br> to excellence.</p>
+    </div>
+    </div>
+       <div class="container">
+        <div class="c1">
+        <h1>7</h1>
+        <p>Years of experience</p>
+        <h1>150+</h1>
+        <p>Successful projects completed</p>
+
+    </div>
+    <div class="c2">
+     <img src="aboutimg/about 2.jpg" alt="">
+    </div>
+     <div class="c3">
+        <h1>47</h1>
+        <p>Expert team members</p>
+        <h1>97%</h1>
+        <p>Customer satisfaction rate</p>
+     </div>
+    </div>
+   
+  
+   <div class="c4">
+        <h1>Our talented staff</h1>
+    </div> 
+
+    <div class="d">
+    <div class="d1">
+        <img src="aboutimg/about_team-01.jpg" alt="">
+        <div class="text">Louis Crawford</div>
+    </div>
+    <div class="d2">
+        <img src="aboutimg/about_team-02.jpg" alt="">
+        <div class="text">Billy Vasquez</div>
+    </div>
+    <div class="d3">
+        <img src="aboutimg/about_team-03.jpg" alt="">
+        <div class="text">Amanda Reed</div>
+    </div>
+    <div class="d4">
+        <img src="aboutimg/about_team-04.jpg" alt="">
+        <div class="text">Dennis Barrett</div>
+    </div>
+   </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    dropdownToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        dropdownMenu.classList.toggle('show');
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+            dropdownMenu.classList.remove('show');
+        }
+    });
+});
+</script>
+
+</body>   
+</html>
