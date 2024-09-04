@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+:root{
+    --color--gray-3: #e8e3d9;
+    --font-family--body: Inter, sans-serif;
+    --color--body: var(--color--gray-1);
+    --font-family--heading: Mustard, sans-serif;
+    --color--heading: var(--color--black);
+    --color--black: #181a1c;
+    --color--white: white;
+    --color--primary-1: #e45533;
+    --color--gray-1: #646464;
+    --color--gray-2: #929292;
+    --color--transparent: #0000;
+}
+nav{
+    background-color: rgba(20, 4, 4, 0.925);
+    display: flex;
+    height: 90px;
+    
+}
+nav img{
+    height: 45px;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+.navbar-menu li {
+    position: relative;
+}
+nav ion-icon{
+    color: white;
+}
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.navbar-menu a:hover, .dropdown:hover .dropdown-toggle {
+    color: #e45533;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #eddcb8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100px;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 5px 6px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+   color: #e45533;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+nav button{
+    height: 50px;
+    width: 200px;
+    background-color: #e45533;
+    color: white;
+    margin-top: 25px;
+    margin-left: 230px;
+    font-size: 16px;
+}
+nav button:hover{
+    border: 1px white solid;
+    background-color: black;
+    color:white;
+}
+.a1-a2{
+   display: flex;
+   margin-top: 40px;
+   background-color: black;
+
+}
+.a1 img{
+  height: 500px;
+  width: 600px;
+  margin-left: 40px;
+  
+}
+.a2 h1{
+  font-size: 60px;
+  margin-left: 30px;
+  margin-top: 70px;
+  color: #929292;
+}
+.a2 p{
+    font-size: 20px;
+    margin-left: 30px;
+    color: #929292;
+    
+}
+.b1{
+    font-size: 40px;
+    padding: 60px;
+}
